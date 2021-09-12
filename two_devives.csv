@@ -1,0 +1,14 @@
+192.168.23.61,192.168.23.62
+terminal length 0,terminal length 0
+conf t,conf t
+int g0/5,int l1
+ip addr 61.61.61.61 255.255.255.0,ip addr 62.62.62.62
+no shut,int l0
+,ip addr 2.2.2.2
+int l0,
+ip addr 1.1.1.1 ,do sh run int l0
+,do sh run int l1
+,
+exit,
+exit,
+sh ip int brief,
